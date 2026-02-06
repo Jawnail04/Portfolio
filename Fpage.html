@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Personal Blog</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="https://unpkg.com/scrollreveal"></script>  
+        
+
+    </head>
+    <body>
+
+        <header class="header">
+            <a href="#home" class="logo">Jhunel.dev</a>
+
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#works">Works</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <section id="home" class="home">
+            <div class="home-content">
+                <h1>Hi, I'm Jhunel Bangit</h1>
+                <h3>Product Designer</h3>
+                <h2>Front-end Developer</h2>
+                <h4>Programmer</h4>
+            </div>
+            <div>
+                <div class="blob"></div> 
+            </div>
+
+
+        </section>
+
+        <section id="about" class="about">
+            
+            <div>
+               <div class="abtpfp"></div>
+            </div>
+
+            <div class="about-content">
+                <h2>About Me</h2>
+                <h3>Graphic Designer</h3>
+                <p>Passionate graphic designer specializing in creating visually stunning designs that captivate audiences and communicate messages effectively</p>
+                <h3>Product Designer</h3>
+                <p>Innovative product designer skilled in transforming ideas into tangible, user-centric experiences</p>
+                <h3>Developer</h3>
+                <p>Dynamic developer fluent in multiple programming languages and frameworks, with a passion for building scalable and efficient software solutions</p>
+
+            </div>
+
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="skills-content">
+                <h2>Skills</h2>
+            </div>
+            
+            
+            <div class="artist">
+                <img src="artist1.jpg" alt="">
+            </div>
+            <div class="designer">
+                <img src="design1.jpg" alt="">
+            </div>
+            <div class="developer">
+                <img src="developer.jpg" alt="">
+            </div>
+
+            <div class="txt1">
+                <h3>Artist</h3>
+            </div>
+            <div class="txt2">
+                <h3>Designer</h3>
+            </div>
+            <div class="txt3">
+                <h3>Developer</h3>
+            </div>
+            
+            <div class="cplus">
+                <img src="c++.png" alt="">
+            </div>
+            <div class="java">
+                <img src="java.png" alt="">
+            </div>
+            <div class="html">
+                <img src="html.png" alt="">
+            </div>
+            <div class="css">
+                <img src="social.png" alt="">
+            </div>
+            
+
+        </section>
+
+        <section  id="works" class="works">
+            <div class="works-content">
+                <div class="grid1"><video autoplay loop muted plays-inline src="worksvid.mp4"></video></video></div>
+                <div class="grid2"></div>
+                <div class="grid3"><video autoplay loop muted plays-inline src="Etheral.mp4"></video></video></div>
+                <div class="grid4"></div>
+                <div class="grid5"></div>
+                <div class="grid6"><video autoplay loop muted plays-inline src="crave.mp4"></video></video></div>
+            </div>
+        </section>
+
+        <section id="blog" class="blog">
+            <div class="blog-content">
+                <h2>Education</h2>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-content">
+                <h2>Contact</h2>
+            </div>
+        </section>
+
+        <script>
+            ScrollReveal({ 
+                reset: true,
+                distance: '50px', 
+                duration: 2000,
+                delay: 100
+            });
+
+            ScrollReveal().reveal('.home-content h1, .abtpfp', {delay: 100, origin: 'left'});
+            ScrollReveal().reveal('.blob, .about-content h2', {delay: 100, origin: 'right'});
+            ScrollReveal().reveal('.about-content h3', {delay: 300, origin: 'right'});
+            ScrollReveal().reveal('.about-content p', {delay: 600, origin: 'bottom'});
+            ScrollReveal().reveal('.home-content h3', {delay: 100});
+            ScrollReveal().reveal('.home-content h2', {delay: 300, origin: 'top'});
+            ScrollReveal().reveal('.home-content h4', {delay: 600, origin: 'top'});
+            ScrollReveal().reveal('.skills-content h2', {delay: 100, origin: 'top'});
+            ScrollReveal().reveal('.artist img ', {delay: 100, origin: 'left'});
+            ScrollReveal().reveal('.developer img ', {delay: 100, origin: 'right'});
+            ScrollReveal().reveal('.designer img ', {delay: 100, origin: 'bottom'});
+            ScrollReveal().reveal('.txt1 h3, .txt2 h3, .txt3 h3 ', {delay: 300, origin: 'bottom'});
+            ScrollReveal().reveal('.cplus img, .java img, .html img, .css img ', {delay: 600, origin: 'bottom'});
+            ScrollReveal().reveal('.grid1, .grid3, .grid5', {delay: 100, origin: 'left'});
+            ScrollReveal().reveal('.grid2, .grid6, .grid4', {delay: 100, origin: 'right'});
+        </script>
+
+    </body>
+</html>
